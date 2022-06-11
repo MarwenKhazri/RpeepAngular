@@ -1,0 +1,458 @@
+.row {
+  margin-bottom: 10px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.MainImageCol {
+  box-shadow: 0 0 0 0 rgba(0,0,0,0.4);
+  //transition: 0.3s;
+  border-radius: 30px;
+  //margin-left: 4000px;
+  //margin-right: 40px;
+  height: 300px;
+  //position: absolute;
+}
+
+.MainImage {
+
+  border-radius: 30px 30px 30px 30px;
+  width:100%;
+  height:100%;
+
+  object-fit:cover;
+
+}
+
+.CardListText {
+
+  //margin-left: 100px;
+  margin-top: 20px;
+  font-family: monospace;
+
+}
+
+.CardList {
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.4);
+  transition: 0.3s;
+  border-radius: 20px;
+  //margin-right: 5px;
+  height: 300px;
+  //width: 200px;
+  text-align: center;
+
+  margin-right: 10px;
+}
+
+.CardListRow {
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  //text-align: center;
+  //text-align: center;
+}
+
+/*.CardList {
+  margin-left: -120px;
+  //margin-left: 40px;
+
+}*/
+
+.progress {
+  height: 10px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: -10px;
+}
+
+.CardText {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.CardImageDiv {
+  width: 120px;
+  height: 120px;
+  //padding: 10px;
+  //margin-left: 10px;
+  //position: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+
+
+.CardImages {
+  border-radius: 20px 20px 20px 20px;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.CardDescription {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.CardButton {
+  margin-top: 20px !important;
+
+}
+
+//.rounded-pill {
+//  //margin-left: 40px;
+//  margin-right: auto;
+//  margin-left: auto;
+//}
+
+.CardButton {
+  margin-top: -15px;
+}
+
+
+.Ads {
+
+}
+
+.AdOne {
+  height: 150px;
+  padding: 0;
+  margin-right: 10px;
+
+}
+
+.AdTwo {
+  height: 150px;
+  padding: 0;
+
+}
+.AdOneImage {
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  border-radius: 20px 20px 20px 20px;
+
+}
+
+.AdTwoImage {
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  border-radius: 20px 20px 20px 20px;
+}
+
+
+.BigCardImage {
+//position: relative;
+//text-align: center;
+
+}
+
+.BigImage {
+  width: 270px;
+  height: 270px;
+  margin-top: 50px;
+  border-radius: 20px 20px 20px 20px;
+  //margin-left: 10px;
+  //float: left;
+  //padding: 20px;
+}
+
+.BigCard {
+  margin-bottom: 30px;
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.4);
+  border-radius: 20px 20px 20px 20px;
+
+}
+
+
+
+//BigImageCol {
+//  height: 30000px;
+//}
+
+.FirstText {
+
+  //margin-left: 500px;
+  //margin-top: -200px;
+}
+
+.SecondText {
+  //margin-left: 500px;
+}
+
+.ThirdText {
+  //margin-left: 500px;
+}
+
+.FourthText {
+  //margin-left: 500px;
+}
+
+.BigCardText {
+    margin-top: 40px;
+}
+
+.BigCardButtons {
+  //margin-left: 500px;
+  //width: 500px;
+}
+
+.btn.btn-outline-dark.FirstButton {
+  border-radius: 15px 15px 15px 15px;
+  height: 50px;
+  //width: 200px;
+  //margin-right: 10px;
+}
+
+.btn.btn-primary.SecondButton {
+  border-radius: 15px 15px 15px 15px;
+  height: 50px;
+  //width: 200px;
+  //margin-left: 10px;
+}
+
+.Heart {
+  background-color: DodgerBlue; /* Blue background */
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  padding: 12px 16px; /* Some padding */
+  font-size: 16px; /* Set a font size */
+  cursor: pointer; /* Mouse pointer on hover */
+  //margin-left: 1220px;
+  border-radius: 15px 15px 15px 15px;
+  //margin-top: -200px;
+
+}
+
+.btn.Heart:hover {
+  background-color: RoyalBlue;
+}
+
+.btn.Share {
+  background-color: DodgerBlue; /* Blue background */
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  padding: 12px 16px; /* Some padding */
+  font-size: 16px; /* Set a font size */
+  cursor: pointer; /* Mouse pointer on hover */
+  //margin-left: 1220px;
+  border-radius: 15px 15px 15px 15px;
+  //margin-top: -130px;
+}
+
+.btn.Share:hover {
+  background-color: RoyalBlue;
+}
+
+.BigCardSideButtons {
+  //margin-top: 10px;
+  //margin-bottom: 10px;
+  //position: absolute;
+  //top: 0px;
+  //right: 0px;
+  //float: right;
+  margin-top: 10px;
+  float: left;
+
+}
+
+.BigCardSoldOut {
+  margin-bottom: 30px;
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.4);
+  border-radius: 20px 20px 20px 20px;
+  //height: 600px;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+}
+
+.SoldOutText {
+  //margin-left: 20px;
+  //margin-top: 10px;
+  //float: left;
+}
+
+
+SoldOutRow {
+  margin-bottom: 30px;
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.4) !important;
+  border-radius: 20px 20px 20px 20px;
+  background: red;
+
+}
+
+.SoldOutCardImages {
+  border-radius: 20px 20px 20px 20px;
+  margin-top: 30px;
+  padding: 15px;
+  height: 200px;
+
+}
+
+.SoldOutCardDescription {
+  text-align: center;
+}
+
+.ParticipationStatus {
+  margin-top: -10px;
+
+}
+
+.SoldOutDate {
+  margin-top: -50px;
+}
+
+.SoldOutId {
+  margin-bottom: 50px;
+}
+
+.ProductsText {
+  margin-left: 100px;
+  margin-top: 50px;
+
+}
+
+.ProductCardImage {
+  margin-top: 20px;
+
+}
+
+.ProductCardImages {
+  height: 150px;
+  border-radius: 20px 20px 20px 20px;
+}
+
+.ProductCardDescription {
+  text-align: center;
+}
+
+.ProductName {
+  margin-top: 30px;
+}
+
+.ProductPrice {
+  margin-top: -20px;
+}
+
+.col.Winners {
+  margin-top: 40px;
+  height: 500px;
+}
+
+.col.WinnersCard {
+  height: 400px;
+}
+
+.WinnersCardImage {
+  margin-top: 30px;
+}
+
+.WinnersCardImages {
+  border-radius: 20px 20px 20px 20px ;
+  height: 230px;
+}
+
+.WinnersCardDescription {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.WinnerDesc {
+  margin-top: 30px;
+}
+
+.WinnersName {
+  margin-top: 10px;
+}
+
+.WinnersReward {
+  margin-top: 10px;
+}
+
+.PrizeId {
+  margin-top: -10px;
+}
+
+.PrizeDate {
+  margin-top: 10px;
+}
+
+.WinnersTextOne {
+  margin-top: 10px;
+}
+
+.WinnersText {
+  margin-left: 20px;
+}
+
+.WinnersTextTwo {
+  margin-top: -10px;
+}
+
+.col.Draws {
+  margin-top: 30px;
+}
+
+.DrawsText {
+  margin-left: 20px;
+}
+
+.DrawsTextOne {
+  margin-top: 10px;
+}
+
+.DrawsTextTwo {
+  margin-top: -10px;
+}
+
+.DrawsButtons{
+  margin-left: 550px;
+}
+
+.btn.btn-primary.DrawButtonOne {
+  border-radius: 50px 50px 50px 50px;
+
+}
+
+.btn.btn-primary.DrawButtonTwo {
+  border-radius: 50px 50px 50px 50px;
+
+}
+
+.row.WinnersRow {
+  margin-left: 5px;
+}
+
+.SoldOutCard {
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.4);
+  transition: 0.3s;
+  border-radius: 20px;
+  //margin-right: 5px;
+  height: 400px;
+  //width: 200px;
+  text-align: center;
+  //margin-top: 100px;
+  margin-right: 10px;
+}
+
+.TextOneSoldOut {
+  //float: left;
+}
+
+.TextTwoSoldOut {
+  //float: left;
+}
+
+.ProductImageDiv {
+  width: 170px;
+  height: 170px;
+  //padding: 10px;
+  //margin-left: 10px;
+  //position: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
