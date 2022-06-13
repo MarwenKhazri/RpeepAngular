@@ -1,0 +1,36 @@
+.wishListCard {
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.4);
+  transition: 0.3s;
+  border-radius: 20px;
+  //margin-right: 5px;
+  height: 150px;
+  width: 200px;
+  text-align: center;
+
+  //margin-right: 10px;
+}
+
+.wishListImageDiv {
+  width: 150px;
+  height: 100px;
+  //padding: 10px;
+  //margin-left: 10px;
+  //position: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+}
+
+.wishListImage {
+  border-radius: 10px 10px 10px 10px;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.buttonStyle {
+  width: 250px;
+  height: 50px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}

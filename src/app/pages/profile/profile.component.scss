@@ -1,0 +1,85 @@
+.ProfileBox {
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.4);
+  transition: 0.3s;
+  border-radius: 20px;
+  //margin-right: 5px;
+  height: 400px;
+  //width: 400px;
+  margin-bottom: 20px;
+}
+
+.ProfilePicDiv {
+  width: 250px;
+  height: 250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ProfilePic {
+  border-radius: 20px 20px 20px 20px;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  margin-top: 20px;
+}
+
+.UserName {
+  margin-top: 30px;
+}
+
+.LevelBox {
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.4);
+  transition: 0.3s;
+  border-radius: 20px;
+  //margin-right: 5px;
+  height: 200px;
+  //width: 400px;
+  margin-bottom: 20px;
+}
+
+.MenuBox {
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.4);
+  transition: 0.3s;
+  border-radius: 20px;
+  //margin-right: 5px;
+  height: auto;
+  //width: 400px;
+  margin-bottom: 20px;
+}
+
+.LeftInput {
+  margin-right: 10px;
+}
+
+.FormButton {
+  border-radius: 10px 10px 10px 10px;
+  width: 100px;
+  height: 50px;
+}
+
+.RankInfo {
+  margin-left: 10px;
+
+}
+
+.IpointsDiv {
+  float: right;
+  margin-right: 10px;
+}
+
+.benefits {
+  margin-left: 10px;
+}
+
+.progress {
+  height: 5px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.MenuButton {
+  width: 100%;
+  text-align: left;
+
+}

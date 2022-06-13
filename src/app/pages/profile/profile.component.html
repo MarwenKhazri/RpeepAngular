@@ -1,0 +1,133 @@
+
+<div class="container">
+  <app-navbar></app-navbar>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="ProfileBox MyDiv">
+        <div class="ProfilePicDiv">
+          <img class="ProfilePic" src="assets/pic.jpg" alt="Avatar" style="width:100%">
+        </div>
+        <h3 class="UserName">Marwen Khazri</h3>
+        <h6>MarwenKhazri@Gmail.su</h6>
+      </div>
+      <div class="LevelBox">
+        <label class="RankInfo">
+        <h5 style="margin-bottom: -5px;">Blue Member</h5>
+          <small>Expiring in 365</small>
+        </label>
+        <label class="IpointsDiv">
+          <h5 style="margin-bottom: -5px">AED5.00</h5>
+          <small>your available iPoints</small>
+        </label><br>
+        <label class="benefits">
+          <h6 style="margin-top: 40px; margin-bottom: -5px">Benefits</h6>
+          <small style="font-size: 10px">Get Back 1% of your purchase in iPoints for 12 months tralling period</small>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <small>purchase with 20AED more to reach silver level</small>
+        </label>
+      </div>
+      <div class="MenuBox MyDiv">
+        <button (click)="showPersonalDetails()" type="button" style="border-top-left-radius: 20px; border-top-right-radius: 20px" class="btn btn-outline-dark MenuButton"><i style="margin-right: 20px" class="fa fa-user" aria-hidden="true"></i>Personal Details<i style="float: right; margin-top: 5px" class="fa fa-angle-right" aria-hidden="true"></i></button>
+        <button (click)="showWishlist()" type="button" class="btn btn-outline-dark MenuButton"><i style="margin-right: 20px" class="fa fa-heart" aria-hidden="true"></i>Wishlist<i style="float: right; margin-top: 5px" class="fa fa-angle-right" aria-hidden="true"></i></button>
+        <button type="button" class="btn btn-outline-dark MenuButton"><i style="margin-right: 20px" class="fa fa-flag" aria-hidden="true"></i>Levels<i style="float: right; margin-top: 5px" class="fa fa-angle-right" aria-hidden="true"></i></button>
+        <button type="button" class="btn btn-outline-dark MenuButton"><i style="margin-right: 25px" class="fa fa-dollar" aria-hidden="true"></i>Points<i style="float: right; margin-top: 5px" class="fa fa-angle-right" aria-hidden="true"></i></button>
+        <button type="button" class="btn btn-outline-dark MenuButton"><i style="margin-right: 15px" class="fa fa-ticket" aria-hidden="true"></i>Active Coupons<i style="float: right; margin-top: 5px" class="fa fa-angle-right" aria-hidden="true"></i></button>
+        <button type="button" class="btn btn-outline-dark MenuButton"><i style="margin-right: 15px" class="fa fa-credit-card-alt" aria-hidden="true"></i>Payment<i style="float: right; margin-top: 5px" class="fa fa-angle-right" aria-hidden="true"></i></button>
+        <button type="button" class="btn btn-outline-dark MenuButton"><i style="margin-right: 15px" class="fa fa-screwdriver-wrench" aria-hidden="true"></i>Settings<i style="float: right; margin-top: 5px" class="fa fa-angle-right" aria-hidden="true"></i></button>
+        <button type="button" class="btn btn-outline-dark MenuButton"><i style="margin-right: 20px" class="fa fa-map-marker-alt" aria-hidden="true"></i>Shipping Address<i style="float: right; margin-top: 5px" class="fa fa-angle-right" aria-hidden="true"></i></button>
+        <button type="button" style="border-bottom-left-radius: 20px; border-bottom-right-radius: 20px" class="btn btn-outline-dark MenuButton"><i style="margin-right: 15px" class="fa fa-sign-out-alt" aria-hidden="true"></i>Sign Out<i style="float: right; margin-top: 5px" class="fa fa-angle-right" aria-hidden="true"></i></button>
+      </div>
+    </div>
+    <div class="col-md-8">
+      <form *ngIf="personalDetailsState">
+        <h1>Personal Details</h1>
+        <div class="form-row">
+          <label class="form-group col-md-5 LeftInput">
+            <label>First Name</label>
+            <input class="form-control" placeholder="First Name">
+          </label>
+          <label class="form-group col-md-5 RightInput">
+            <label>Last Name</label>
+            <input class="form-control" placeholder="Last Name">
+          </label>
+        </div>
+
+        <div class="form-row">
+          <label class="form-group col-md-5 LeftInput">
+            <label>Email</label>
+            <input class="form-control" placeholder="Email">
+          </label>
+          <label class="form-group col-md-5 RightInput">
+            <label>Date</label>
+            <input type="date" class="form-control">
+          </label>
+        </div>
+
+        <div class="form-row">
+          <label>Phone Number</label>
+        <div class="input-group mb-3" style="width: 358px">
+          <div class="input-group-prepend">
+            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <label>Code:</label>
+              +216
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+              <div role="separator" class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Separated link</a>
+            </div>
+          </div>
+          <input type="text" class="form-control" aria-label="Text input with dropdown button">
+        </div>
+        </div>
+
+        <div class="form-row">
+          <label class="form-group col-md-5 LeftInput">
+            <label for="inputState">Nationality</label>
+            <select id="inputState" class="form-control">
+              <option selected>Tunisia</option>
+              <option>Tunisia</option>
+              <option>France</option>
+            </select>
+          </label>
+          <label class="form-group col-md-5 LeftInput">
+            <label for="inputState">Country of residence</label>
+            <select class="form-control">
+              <option selected>Tunisia</option>
+              <option>Tunisia</option>
+              <option>France</option>
+            </select>
+          </label>
+        </div>
+
+
+        <div class="form-row">
+          <label>Gender:</label><br>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+            <label class="form-check-label" for="inlineRadio1">Male</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+            <label class="form-check-label" for="inlineRadio2">Female</label>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary FormButton">Update</button>
+
+      </form>
+      <div *ngIf="wishListState"><!--WishList-->
+        <app-wishlist></app-wishlist>
+      </div>
+    </div>
+  </div>
+
+
+</div>

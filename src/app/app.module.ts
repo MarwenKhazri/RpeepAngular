@@ -10,6 +10,8 @@ import {NavbarComponent} from "./components/navbar/navbar.component";
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ProfileComponent } from './pages/profile/profile.component';
+import { WishlistComponent } from './pages/wishlist/wishlist.component';
 
 
 @NgModule({
@@ -19,6 +21,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     ContactComponent,
     FooterComponent,
     NavbarComponent,
+    ProfileComponent,
+    WishlistComponent,
   ],
   imports: [
     BrowserModule,
