@@ -1,0 +1,36 @@
+.availablePoints {
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.4);
+  transition: 0.3s;
+  border-radius: 20px;
+  //margin-right: 5px;
+  height: 75px;
+  //width: 200px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.LeftSide {
+  float: left;
+  margin-left: 10px;
+  margin-top: 10px
+}
+
+.RightSide {
+  float: right;
+  margin-right: 10px;
+  margin-top: 10px
+}
+
+.PointsInfo {
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.4);
+  transition: 0.3s;
+  border-radius: 20px;
+  //margin-right: 5px;
+  height: 250px;
+  //width: 200px;
+  text-align: center;
+}
+
+.InfoText {
+  margin-bottom: 20px;
+}

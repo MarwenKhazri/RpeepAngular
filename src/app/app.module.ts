@@ -12,6 +12,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ProfileComponent } from './pages/profile/profile.component';
 import { WishlistComponent } from './pages/wishlist/wishlist.component';
+import { LevelsComponent } from './pages/levels/levels.component';
+import { PointsComponent } from './pages/points/points.component';
+import { SettingsComponent } from './pages/settings/settings.component';
+import { AddressComponent } from './pages/address/address.component';
 
 
 @NgModule({
@@ -23,6 +27,10 @@ import { WishlistComponent } from './pages/wishlist/wishlist.component';
     NavbarComponent,
     ProfileComponent,
     WishlistComponent,
+    LevelsComponent,
+    PointsComponent,
+    SettingsComponent,
+    AddressComponent,
   ],
   imports: [
     BrowserModule,
