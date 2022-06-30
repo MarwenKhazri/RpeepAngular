@@ -6,121 +6,114 @@
 <div class="container">
   <div class="row">
     <div class="col-md-4">
-      <div class="ProfileBox MyDiv">
+      <div class="ProfileBox MyDiv" style="background: #8AB1D0">
         <div class="ProfilePicDiv">
           <img class="ProfilePic" src="assets/pic.jpg" alt="Avatar" style="width:100%">
         </div>
         <h3 class="UserName">Marwen Khazri</h3>
-        <h6>MarwenKhazri@Gmail.su</h6>
+        <h6 style="color: white">MarwenKhazri@Gmail.su</h6>
       </div>
       <div class="LevelBox">
-        <label class="RankInfo">
-        <h5 style="margin-bottom: -5px; font-weight: bold; font-family: sans-serif, rubik; color: blue">Blue Member</h5>
-          <small style="font-family: sans-serif, rubik;">Expiring in 365</small>
+        <label class="RankInfo" style="margin-top: 10px; margin-right: 10px">
+        <h5 i18n style="margin-bottom: -5px; font-weight: bold; font-family: 'Titillium Web', sans-serif;margin-right: 5px; color: #8AB1D0">Blue Member</h5>
+          <small i18n style="font-family: 'Titillium Web', sans-serif;margin-right: 5px;">Expiring in 365</small>
+          <h5 style="margin-bottom: -5px; font-weight: bold; font-family: 'Titillium Web', sans-serif;margin-right: 5px;">5.00 AED</h5>
+          <small i18n style="font-family: 'Titillium Web', sans-serif;margin-right: 5px;">your available iPoints</small>
         </label>
-        <label class="IpointsDiv">
-          <h5 style="margin-bottom: -5px; font-weight: bold; font-family: sans-serif, rubik;">5.00 AED</h5>
-          <small style="font-family: sans-serif, rubik;">your available iPoints</small>
-        </label><br>
-        <label class="benefits">
-          <h6 style="margin-top: 40px; margin-bottom: -5px; font-weight: bold; font-family: sans-serif, rubik;">Benefits</h6>
-          <small style="font-size: 10px; font-family: sans-serif, rubik;">Get Back 1% of your purchase in iPoints for 12 months tralling period</small>
+<!--        <label class="IpointsDiv">-->
+<!--          <h5 style="margin-bottom: -5px; font-weight: bold; font-family: sans-serif, rubik;">5.00 AED</h5>-->
+<!--          <small i18n style="font-family: sans-serif, rubik;">your available iPoints</small>-->
+<!--        </label><br>-->
+        <label class="benefits" style="margin-top: -20px; margin-right: 10px">
+          <h6 i18n style=" margin-top: 40px; margin-bottom: -5px; font-weight: bold; font-family: 'Titillium Web', sans-serif;">Benefits</h6>
+          <small i18n style="font-size: 10px;  font-family: 'Titillium Web', sans-serif;">Get Back 1% of your purchase in iPoints for 12 months tralling period</small>
           <div class="progress">
             <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
-          <small style="font-family: sans-serif, rubik;">purchase with 20AED more to reach silver level</small>
+          <small i18n style="font-family: 'Titillium Web', sans-serif;">purchase with 20AED more to reach silver level</small>
         </label>
       </div>
       <div class="MenuBox MyDiv">
-        <button (click)="showPersonalDetails()" type="button" style="border-top-left-radius: 20px; border-top-right-radius: 20px" class="btn btn-outline-dark MenuButton"><i style="margin-right: 20px" class="fa fa-user" aria-hidden="true"></i>Personal Details<i style="float: right; margin-top: 5px" class="fa fa-angle-right" aria-hidden="true"></i></button>
-        <button (click)="showWishlist()" type="button" class="btn btn-outline-dark MenuButton"><i style="margin-right: 20px" class="fa fa-heart" aria-hidden="true"></i>Wishlist<i style="float: right; margin-top: 5px" class="fa fa-angle-right" aria-hidden="true"></i></button>
-        <button (click)="showLevels()" type="button" class="btn btn-outline-dark MenuButton"><i style="margin-right: 20px" class="fa fa-flag" aria-hidden="true"></i>Levels<i style="float: right; margin-top: 5px" class="fa fa-angle-right" aria-hidden="true"></i></button>
-        <button (click)="showPoints()" type="button" class="btn btn-outline-dark MenuButton"><i style="margin-right: 25px" class="fa fa-dollar" aria-hidden="true"></i>Points<i style="float: right; margin-top: 5px" class="fa fa-angle-right" aria-hidden="true"></i></button>
-        <button type="button" class="btn btn-outline-dark MenuButton"><i style="margin-right: 15px" class="fa fa-ticket" aria-hidden="true"></i>Active Coupons<i style="float: right; margin-top: 5px" class="fa fa-angle-right" aria-hidden="true"></i></button>
-        <button type="button" class="btn btn-outline-dark MenuButton"><i style="margin-right: 15px" class="fa fa-credit-card-alt" aria-hidden="true"></i>Payment<i style="float: right; margin-top: 5px" class="fa fa-angle-right" aria-hidden="true"></i></button>
-        <button (click)="showSettings()" type="button" class="btn btn-outline-dark MenuButton"><i style="margin-right: 15px" class="fa fa-screwdriver-wrench" aria-hidden="true"></i>Settings<i style="float: right; margin-top: 5px" class="fa fa-angle-right" aria-hidden="true"></i></button>
-        <button (click)="showAddressInfo()" type="button" class="btn btn-outline-dark MenuButton"><i style="margin-right: 20px" class="fa fa-map-marker-alt" aria-hidden="true"></i>Shipping Address<i style="float: right; margin-top: 5px" class="fa fa-angle-right" aria-hidden="true"></i></button>
-        <button type="button" style="border-bottom-left-radius: 20px; border-bottom-right-radius: 20px" class="btn btn-outline-dark MenuButton"><i style="margin-right: 15px" class="fa fa-sign-out-alt" aria-hidden="true"></i>Sign Out<i style="float: right; margin-top: 5px" class="fa fa-angle-right" aria-hidden="true"></i></button>
+        <button i18n style="border-top-right-radius:20px; border-top-left-radius: 20px; text-align: center; font-family: 'Titillium Web', sans-serif;" (click)="showWishlist()" type="button" class="btn btn-outline-dark MenuButton"><i style="margin-right: 5px; margin-left: 5px" class="fa fa-heart" aria-hidden="true"></i>Wishlist</button>
+        <button i18n style="text-align: center; font-family: 'Titillium Web', sans-serif;" (click)="showLevels()" type="button" class="btn btn-outline-dark MenuButton"><i style="margin-right: 5px; margin-left: 5px" class="fa fa-flag" aria-hidden="true"></i>Levels</button>
+        <button i18n style="text-align: center; font-family: 'Titillium Web', sans-serif;" (click)="showPoints()" type="button" class="btn btn-outline-dark MenuButton"><i style="margin-right: 5px; margin-left: 5px" class="fa fa-dollar" aria-hidden="true"></i>Points</button>
+        <button i18n style="text-align: center;font-family: 'Titillium Web', sans-serif;" type="button" class="btn btn-outline-dark MenuButton"><i style="margin-right: 5px; margin-left: 5px" class="fa fa-ticket" aria-hidden="true"></i>Active Coupons</button>
+        <button i18n style="text-align: center; font-family: 'Titillium Web', sans-serif;" type="button" class="btn btn-outline-dark MenuButton"><i style="margin-right: 5px; margin-left: 5px" class="fa fa-credit-card-alt" aria-hidden="true"></i>Payment</button>
+        <button i18n style="text-align: center; font-family: 'Titillium Web', sans-serif;" (click)="showSettings()" type="button" class="btn btn-outline-dark MenuButton"><i style="margin-right: 5px; margin-left: 5px" class="fa fa-screwdriver-wrench" aria-hidden="true"></i>Settings</button>
+        <button i18n style="text-align: center; font-family: 'Titillium Web', sans-serif;" (click)="showAddressInfo()" type="button" class="btn btn-outline-dark MenuButton"><i style="margin-right: 5px; margin-left: 5px" class="fa fa-map-marker-alt" aria-hidden="true"></i>Shipping Address</button>
+        <button i18n type="button" style="border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; text-align: center; font-family: 'Titillium Web', sans-serif;" class="btn btn-outline-dark MenuButton"><i style="margin-right: 5px; margin-left: 5px" class="fa fa-sign-out-alt" aria-hidden="true"></i>Sign Out</button>
       </div>
     </div>
     <div class="col-md-8">
       <form *ngIf="personalDetailsState">
-        <h1>Personal Details</h1>
+        <h1 style="font-family: 'Anek Malayalam', sans-serif;" i18n>Personal Details</h1>
         <div class="form-row">
           <label class="form-group col-md-5 LeftInput">
-            <label style="font-weight: bold; font-family: sans-serif, rubik;">First Name</label>
-            <input class="form-control" placeholder="First Name">
+            <label i18n style="font-weight: bold; font-family: 'Titillium Web', sans-serif;">First Name</label>
+            <input class="form-control" >
           </label>
-          <label class="form-group col-md-5 RightInput">
-            <label style="font-weight: bold; font-family: sans-serif, rubik;">Last Name</label>
-            <input class="form-control" placeholder="Last Name">
+          <label class="form-group col-md-5 RightInput" style="margin-right: 10px">
+            <label i18n style="font-weight: bold; font-family: 'Titillium Web', sans-serif;">Last Name</label>
+            <input class="form-control">
           </label>
         </div>
 
         <div class="form-row">
           <label class="form-group col-md-5 LeftInput">
-            <label style="font-weight: bold; font-family: sans-serif, rubik;">Email</label>
-            <input class="form-control" placeholder="Email">
+            <label i18n style="font-weight: bold; font-family: 'Titillium Web', sans-serif;">Email</label>
+            <input class="form-control">
           </label>
-          <label class="form-group col-md-5 RightInput">
-            <label style="font-weight: bold; font-family: sans-serif, rubik;">Date</label>
+          <label class="form-group col-md-5 RightInput" style="margin-right: 10px">
+            <label i18n style="font-weight: bold; font-family: 'Titillium Web', sans-serif;">Date</label>
             <input type="date" class="form-control">
           </label>
         </div>
 
         <div class="form-row">
-          <label style="font-weight: bold; font-family: sans-serif, rubik;">Phone Number</label>
-        <div class="input-group mb-3" style="width: 358px">
-          <div class="input-group-prepend">
-            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <label>Code:</label>
-              +216
-            </button>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-              <div role="separator" class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Separated link</a>
-            </div>
-          </div>
-          <input type="text" class="form-control" aria-label="Text input with dropdown button">
-        </div>
+          <label class="form-group col-md-5 LeftInput">
+            <label i18n for="inputState" style="font-weight: bold; font-family: 'Titillium Web', sans-serif;">Country Code</label>
+            <select  class="form-control" >
+              <option i18n value="" selected disabled hidden>Choose here</option>
+              <option *ngFor="let c of COUNTRIES">{{c.mobileCode}}</option>
+            </select>
+          </label>
+          <label class="form-group col-md-5 RightInput" style="margin-right: 10px">
+            <label i18n style="font-weight: bold; font-family: 'Titillium Web', sans-serif;">Number</label>
+            <input class="form-control">
+          </label>
         </div>
 
         <div class="form-row">
           <label class="form-group col-md-5 LeftInput">
-            <label for="inputState" style="font-weight: bold; font-family: sans-serif, rubik;">Nationality</label>
-            <select id="inputState" class="form-control">
-              <option selected>Tunisia</option>
-              <option>Tunisia</option>
-              <option>France</option>
+            <label i18n for="inputState" style="font-weight: bold; font-family: 'Titillium Web', sans-serif;">Nationality</label>
+            <select id="inputState" class="form-control" >
+              <option i18n value="" selected disabled hidden>Choose here</option>
+              <option *ngFor="let c of COUNTRIES">{{c.name}}</option>
             </select>
           </label>
-          <label class="form-group col-md-5 LeftInput">
-            <label for="inputState" style="font-weight: bold; font-family: sans-serif, rubik;">Country of residence</label>
-            <select class="form-control">
-              <option selected>Tunisia</option>
-              <option>Tunisia</option>
-              <option>France</option>
+          <label class="form-group col-md-5 LeftInput" style="margin-right: 10px">
+            <label i18n for="inputState" style="font-weight: bold; font-family: 'Titillium Web', sans-serif;">Country of residence</label>
+            <select class="form-control" >
+              <option i18n value="" selected disabled hidden>Choose here</option>
+              <option *ngFor="let c of COUNTRIES">{{c.name}}</option>
             </select>
           </label>
         </div>
 
 
         <div class="form-row">
-          <label style="font-weight: bold; font-family: sans-serif, rubik;">Gender:</label><br>
+          <label i18n style="font-weight: bold; font-family: 'Titillium Web', sans-serif;">Gender:</label><br>
           <div class="form-check form-check-inline">
             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-            <label class="form-check-label" for="inlineRadio1">Male</label>
+            <label style="font-family: 'Titillium Web', sans-serif;" i18n class="form-check-label" for="inlineRadio1">Male</label>
           </div>
           <div class="form-check form-check-inline">
             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-            <label class="form-check-label" for="inlineRadio2">Female</label>
+            <label style="font-family: 'Titillium Web', sans-serif;" i18n class="form-check-label" for="inlineRadio2">Female</label>
           </div>
         </div>
 
-        <button style="width: 200px; height: 50px; border-radius: 20px; font-weight: bold; margin-top: 20px" type="submit" class="btn btn-primary FormButton">Update</button>
+        <button i18n style="font-family: 'Titillium Web', sans-serif; font-size: x-large; width: 200px; height: 50px; border-radius: 20px; font-weight: bold; margin-top: 20px" type="submit" class="btn btn-primary FormButton">Update</button>
 
       </form>
       <div *ngIf="wishListState"><!--WishList-->

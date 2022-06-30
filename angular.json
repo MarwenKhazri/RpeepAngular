@@ -16,6 +16,12 @@
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
+      "i18n": {
+        "locales": {
+          "ar" : "src/locale/messages.ar.xlf",
+          "en" : "src/locale/messages.xlf"
+        }
+      },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -47,12 +53,12 @@
                 {
                   "type": "initial",
                   "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumError": "5mb"
                 },
                 {
                   "type": "anyComponentStyle",
                   "maximumWarning": "2kb",
-                  "maximumError": "4kb"
+                  "maximumError": "5kb"
                 }
               ],
               "fileReplacements": [
@@ -70,6 +76,12 @@
               "extractLicenses": false,
               "sourceMap": true,
               "namedChunks": true
+            },
+            "en": {
+              "localize": ["en"]
+            },
+            "ar": {
+              "localize": ["ar"]
             }
           },
           "defaultConfiguration": "production"
@@ -79,6 +91,12 @@
           "configurations": {
             "production": {
               "browserTarget": "Rpeep:build:production"
+            },
+            "en": {
+              "browserTarget": "Rpeep:build:en"
+            },
+            "ar": {
+              "browserTarget": "Rpeep:build:ar"
             },
             "development": {
               "browserTarget": "Rpeep:build:development"

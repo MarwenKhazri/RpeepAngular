@@ -16,6 +16,13 @@ import { LevelsComponent } from './pages/levels/levels.component';
 import { PointsComponent } from './pages/points/points.component';
 import { SettingsComponent } from './pages/settings/settings.component';
 import { AddressComponent } from './pages/address/address.component';
+import { SimpleDetailsComponent } from './pages/simple-details/simple-details.component';
+import { MdbModalModule } from 'mdb-angular-ui-kit/modal';
+import { ComplexDetailsComponent } from './pages/complex-details/complex-details.component';
+import { DetailsComponent } from './pages/details/details.component';
+import {NgCircleProgressModule} from "ng-circle-progress";
+import { CartComponent } from './pages/cart/cart.component';
+import { CheckoutComponent } from './pages/checkout/checkout.component';
 
 
 @NgModule({
@@ -31,14 +38,29 @@ import { AddressComponent } from './pages/address/address.component';
     PointsComponent,
     SettingsComponent,
     AddressComponent,
+    SimpleDetailsComponent,
+    ComplexDetailsComponent,
+    DetailsComponent,
+    CartComponent,
+    CheckoutComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    NgbModule,
-    BrowserAnimationsModule,
-    FontAwesomeModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        NgbModule,
+        BrowserAnimationsModule,
+        FontAwesomeModule,
+        MdbModalModule,
+        NgCircleProgressModule.forRoot({
+        // set defaults here
+        radius: 100,
+        outerStrokeWidth: 16,
+        innerStrokeWidth: 8,
+        outerStrokeColor: "#78C000",
+        innerStrokeColor: "#C7E596",
+        animationDuration: 300,
+      })
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

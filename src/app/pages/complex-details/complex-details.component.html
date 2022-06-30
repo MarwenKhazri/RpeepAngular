@@ -1,0 +1,70 @@
+<div class="modal-header">
+
+  <button style="margin-left: 300px" type="button" class="btn" aria-label="Close" (click)="modalRef.close()"><i class="fa fa-window-close" aria-hidden="true"></i></button>
+  <button type="button" class="btn" aria-label="Close" (click)="modalRef.close()"><i class="fa fa-share-alt" aria-hidden="true"></i></button>
+  <button type="button" class="btn" aria-label="Close" (click)="modalRef.close()"><i class="fa fa-heart" aria-hidden="true"></i></button>
+  <a type="button" class="btn" aria-label="Close" href="/details"><i class="fa fa-arrows" aria-hidden="true"></i></a>
+
+</div>
+<div class="modal-body">
+
+  <div class="CardText">
+    <small style="font-family: 'Anek Malayalam', sans-serif;" i18n>290 sold out of 450</small>
+  </div>
+  <div class="progress">
+    <div class="progress-bar" role="progressbar" style="width: 25%; " aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+  </div>
+
+  <div class="Image">
+    <img class="ProductImageComplexDetails" src="assets/1980-ford-mustang.jpg" alt="Avatar" >
+  </div>
+
+  <div class="DetailsButtons">
+    <button i18n style="width: 150px; margin-right: 10px; font-family: 'Anek Malayalam', sans-serif;" type="button" class="btn btn-outline-dark" (click)="showProduct()">Product details</button>
+    <button i18n style="width: 150px; font-family: 'Anek Malayalam', sans-serif;" type="button" class="btn btn-outline-dark" (click)="showPrize()">Prize details</button>
+  </div>
+
+  <div *ngIf="ProductState" class="Product">
+
+    <h6 i18n style="font-weight: normal; font-family: 'Anek Malayalam', sans-serif;">Get a chance to win:</h6>
+    <h6 style="font-weight: bold; margin-top: -10px; font-family: 'Anek Malayalam', sans-serif;">1980 Mustang</h6>
+
+    <p>
+      Lighter, brighter and mightier - here’s your chance to take home the all-new iPad Air. Supercharged by the Apple M1 chip, with 5G support and housing a 12MP Ultra Wide front camera with Center Stage, the iPad Air has set the benchmark for tablets this year. It’s 10.9-inch Liquid Retina display features advanced technologies like True Tone, P3 wide color, and an antireflective coating. Additionally, the 8-core M1 CPU delivers up to 60 percent faster performance than the previous generation, and the extraordinary 8-core GPU delivers up to 2x faster graphics making the iPad Air a creative and mobile gaming powerhouse.
+    </p>
+
+  </div>
+
+  <div *ngIf="PrizeState" class="Prize">
+
+    <div style="margin-bottom: 20px" class="row">
+
+      <div class="col">
+        <h6 style="font-weight: bold; font-family: 'Anek Malayalam', sans-serif;">Blanco Pencil</h6>
+      </div>
+
+      <div class="col">
+        <h6 i18n style="font-weight: normal; float: right; font-family: 'Anek Malayalam', sans-serif;">price: 15 AED</h6>
+      </div>
+
+    </div>
+
+    <p>
+      Blanco Pencil delivers perfect precision in writing and it can work wonders for improving your artwork. Making it great for drawing, sketching, taking notes, and more.
+    </p>
+
+  </div>
+
+</div>
+<div class="row modal-footer">
+
+  <div class="col">
+  <h6 style="font-family: 'Anek Malayalam', sans-serif;" i18n>Buy Blanco Pencil</h6>
+  <h6 style="font-family: 'Anek Malayalam', sans-serif;">AED15.00</h6>
+  </div>
+
+  <div class="col">
+    <button i18n style="width: 250px; height: 50px; border-radius: 10px; font-family: 'Anek Malayalam', sans-serif;" type="button" class="btn btn-primary">Add to cart</button>
+  </div>
+
+</div>

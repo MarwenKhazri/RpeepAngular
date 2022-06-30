@@ -9,24 +9,24 @@
   padding: 0;
 }
 
-body {
-  background: var(--background-color);
-  font-family: var(--font);
-  display: flex;
-  justify-content: center;
-}
+//body {
+//  background: var(--background-color);
+//  font-family: var(--font);
+//  display: flex;
+//  justify-content: center;
+//}
 
-/* Timeline Container */
-.timeline {
-  background: var(--primary-color);
-  margin: 20px auto;
-  padding: 20px;
-}
+///* Timeline Container */
+//.timeline {
+//  background: var(--primary-color);
+//  margin: 20px auto;
+//  padding: 20px;
+//}
 
-/* Outer Layer with the timeline border */
-.outer {
-  border-left: 2px solid #333;
-}
+///* Outer Layer with the timeline border */
+//.outer {
+//  border-left: 2px solid #333;
+//}
 
 /* Card container */
 .card {
@@ -56,16 +56,16 @@ body {
 }
 
 /* Timeline dot  */
-.title::before {
-  content: "";
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  background: white;
-  border-radius: 999px;
-  left: -47px;
-  border: 3px solid black;
-}
+//.title::before {
+//  content: "";
+//  position: absolute;
+//  width: 30px;
+//  height: 30px;
+//  background: white;
+//  border-radius: 999px;
+//  left: -47px;
+//  border: 3px solid black;
+//}
 
 .dot {
   height: 12px;
