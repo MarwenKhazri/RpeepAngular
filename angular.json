@@ -17,16 +17,16 @@
       "sourceRoot": "src",
       "prefix": "app",
       "i18n": {
+        "sourceLocale": "en-US",
         "locales": {
-          "ar" : "src/locale/messages.ar.xlf",
-          "en" : "src/locale/messages.xlf"
+          "ar" : "src/locale/messages.ar.xlf"
         }
       },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/rpeep",
+            "outputPath": "dist/",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -77,9 +77,6 @@
               "sourceMap": true,
               "namedChunks": true
             },
-            "en": {
-              "localize": ["en"]
-            },
             "ar": {
               "localize": ["ar"]
             }
@@ -91,9 +88,6 @@
           "configurations": {
             "production": {
               "browserTarget": "Rpeep:build:production"
-            },
-            "en": {
-              "browserTarget": "Rpeep:build:en"
             },
             "ar": {
               "browserTarget": "Rpeep:build:ar"

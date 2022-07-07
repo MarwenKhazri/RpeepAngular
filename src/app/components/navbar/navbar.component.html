@@ -1,8 +1,10 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light NavBar">
-  <a style="margin-left: 10px; font-weight: bold; font-family: 'Anek Malayalam', sans-serif;" class="navbar-brand " href="/home">Rpeep</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+  <a style="margin-left: 10px; font-weight: bold; font-family: 'Anek Malayalam', sans-serif;" class="navbar-brand " href="https://rpeep-2022.web.app/{{Language}}/home/">Rpeep</a>
+<!--  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">-->
+<!--    <span class="navbar-toggler-icon"></span>-->
+<!--  </button>-->
+<!--  <a style="margin-left: 10px; font-weight: bold; font-family: 'Anek Malayalam', sans-serif;" class="navbar-brand " href="/profile">Rpeep</a>-->
+
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
@@ -10,10 +12,10 @@
         <a i18n="@@products" style="font-weight: bold; font-family: 'Anek Malayalam', sans-serif;" class="nav-link" href="/home/#Products">Products <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a i18n="@@winners" style="font-weight: bold; font-family: 'Anek Malayalam', sans-serif;" class="nav-link" href="/home/#Winners">Winners</a>
+        <a i18n="@@winners" style="font-weight: bold; font-family: 'Anek Malayalam', sans-serif;" class="nav-link" href="https://rpeep-2022.web.app/{{Language}}/profile/#Winners">Winners</a>
       </li>
       <li class="nav-item active">
-        <a i18n="@@contact" style="font-weight: bold; font-family: 'Anek Malayalam', sans-serif;" class="nav-link" href="/contact">Contact Us<span class="sr-only">(current)</span></a>
+        <a i18n="@@contact" style="font-weight: bold; font-family: 'Anek Malayalam', sans-serif;" class="nav-link" href="https://rpeep-2022.web.app/{{Language}}/contact/">Contact Us<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
         <a i18n="@@call" style="font-weight: bold; font-family: 'Anek Malayalam', sans-serif;" class="nav-link" href="#">Call 0800-Rpeep</a>
@@ -34,10 +36,29 @@
       <li class="nav-item">
         <a i18n="@@language" style="font-weight: bold; font-family: 'Anek Malayalam', sans-serif;" class="nav-link" href="#">Language</a>
       </li>
-      <li class="nav-item">
-        <a style="font-weight: bold; font-family: 'Anek Malayalam', sans-serif;" class="nav-link" href="/profile">Profile</a>
+<!--      <li *ngFor="let locale of localesList">-->
+<!--        <a href="/{{locale.code}}/" (click)="ChangeLang(locale.code)">-->
+<!--          {{locale.label}}-->
+<!--        </a>-->
+<!--      </li>-->
+      <li class="nav-item" *ngFor="let locale of localesList">
+        <a href="/{{locale.code}}/" (click)="ChangeLang(locale.code)">
+          {{locale.label}}
+        </a>
       </li>
+<!--      <li class="nav-item">-->
+<!--        <a style="font-weight: bold; font-family: 'Anek Malayalam', sans-serif;" class="nav-link" href="/profile">Profile</a>-->
+<!--      </li>-->
 
     </ul>
   </div>
+
+  <div *ngFor="let locale of localesList">
+    <a class="navbar-brand" href="/{{locale.code}}/" (click)="ChangeLang(locale.code)">
+      {{locale.label}}
+    </a>
+  </div>
+
+  <a style="margin-left: 10px; font-weight: bold; font-family: 'Anek Malayalam', sans-serif;" class="navbar-brand " href="https://rpeep-2022.web.app/{{Language}}/profile/">Profile</a>
+
 </nav>

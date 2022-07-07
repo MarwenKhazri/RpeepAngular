@@ -7,9 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
+  Language: string = "en-US";
+  localesList = [
+    { code: 'en-US', label: 'English' },
+    { code: 'ar', label: 'Arabic' }
+  ]
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  ChangeLang(code: string)
+  {
+    this.Language = code;
   }
 
 }

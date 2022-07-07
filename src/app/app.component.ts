@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  Language: string = "en-US";
+  localesList = [
+    { code: 'en-US', label: 'English' },
+    { code: 'ar', label: 'Arabic' }
+  ]
   title = 'Rpeep';
+
+  ChangeLang(code: string)
+  {
+    this.Language = code;
+  }
 }

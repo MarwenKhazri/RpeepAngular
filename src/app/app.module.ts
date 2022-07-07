@@ -23,6 +23,7 @@ import { DetailsComponent } from './pages/details/details.component';
 import {NgCircleProgressModule} from "ng-circle-progress";
 import { CartComponent } from './pages/cart/cart.component';
 import { CheckoutComponent } from './pages/checkout/checkout.component';
+import {RouterModule} from "@angular/router";
 
 
 @NgModule({
@@ -46,7 +47,15 @@ import { CheckoutComponent } from './pages/checkout/checkout.component';
   ],
     imports: [
         BrowserModule,
-        AppRoutingModule,
+      RouterModule.forRoot([
+        {path: 'home', component: HomeComponent},
+        {path: 'profile', component: ProfileComponent},
+        {path: 'contact', component: ContactComponent},
+        {path: 'checkout', component: CheckoutComponent},
+        {path: '', redirectTo: '/home', pathMatch: 'full'},
+
+      ]),
+
         NgbModule,
         BrowserAnimationsModule,
         FontAwesomeModule,

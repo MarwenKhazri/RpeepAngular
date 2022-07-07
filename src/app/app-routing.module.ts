@@ -6,16 +6,16 @@ import {ContactComponent} from "./pages/contact/contact.component";
 import {DetailsComponent} from "./pages/details/details.component";
 import {CheckoutComponent} from "./pages/checkout/checkout.component";
 
-const routes: Routes = [
-  { path: 'home', component: HomeComponent },
-  { path: 'profile', component: ProfileComponent },
-  { path: 'contact', component: ContactComponent },
-  { path: 'details', component: DetailsComponent},
-  {path: 'checkout', component: CheckoutComponent}
-];
+// const routes: Routes = [
+//   // { path: '', component: HomeComponent },
+//   // { path: 'profile', component: ProfileComponent },
+//   // { path: 'contact', component: ContactComponent },
+//   // { path: 'details', component: DetailsComponent},
+//   // { path: 'checkout', component: CheckoutComponent}
+// ];
 
-@NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
-})
+// @NgModule({
+//   imports: [RouterModule.forRoot(routes)],
+//   exports: [RouterModule]
+// })
 export class AppRoutingModule { }
